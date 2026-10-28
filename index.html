@@ -1,171 +1,404 @@
-```html
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Zohra Habib | frontend Developer</title>
+  <title>Zohra Habib | Web Developer</title>
 
-    <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="index.css">
+</head>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
-  </head>
+<body>
 
-  <body>
-    <!-- Navbar -->
-    <header>
-      <nav>
-        <h2 class="logo">MY PORTFOLIO<span>.</span></h2>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container nav-content">
 
-        <ul id="menu">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+      <h1 class="logo">Zohra Habib</h1>
 
-        <div class="menu-icon" onclick="toggleMenu()">
-          <i class="fa fa-bars"></i>
-        </div>
-      </nav>
-    </header>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
 
-    <!-- Hero -->
+    </div>
+  </nav>
 
-    <section id="home" class="hero">
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="container hero-content">
+
       <div class="hero-text">
-        <h3>Hello, I'm</h3>
+
+        <p class="small-title">Hello, I'm</p>
 
         <h1>Zohra Habib</h1>
 
-        <h2>
-          <span id="typing"></span>
-        </h2>
+        <h2>Web Developer</h2>
 
-        <p>
-          I create modern, responsive and beautiful websites using HTML, CSS and
-          JavaScript.
+        <p class="description">
+          I am a passionate Web Developer who enjoys creating
+          responsive, clean and user-friendly websites.
         </p>
 
-        <a href="#contact" class="btn"> Hire Me </a>
+        <div class="buttons">
+          <a href="#projects" class="btn primary-btn">
+            View Projects
+          </a>
+
+          <a href="#contact" class="btn secondary-btn">
+            Contact Me
+          </a>
+        </div>
+
       </div>
 
-      <div class="hero-img">
-        <img src="images/profile.jpg" alt="profile" />
-      </div>
-    </section>
 
-    <!-- About -->
+      <!-- Profile Picture -->
+      <div class="profile-container">
+        <div class="profile-border">
 
-    <section id="about">
-      <h2 class="title">About Me</h2>
+          <img
+            src="images/profile.jpg"
+            alt="Zohra Habib"
+          >
 
-      <div class="about">
-        <div>
-          <p>
-            I'm a dedicated Frontend Developer with a passion for crafting
-            modern, responsive, and user-centric web applications. I enjoy
-            transforming creative ideas into seamless digital experiences by
-            combining clean code with intuitive design. My goal is to build
-            websites that are not only visually appealing but also fast,
-            accessible, and optimized for performance across all devices. My
-            expertise includes HTML, CSS, JavaScript, React.js, Tailwind CSS,
-            and Bootstrap. I focus on writing scalable, maintainable code while
-            following modern development practices to create efficient and
-            reliable applications. I continuously explore new technologies and
-            frameworks to enhance my skills and deliver better solutions. I
-            believe that exceptional user experiences are created through
-            attention to detail, thoughtful design, and continuous improvement.
-            Whether collaborating with a team or working independently, I
-            approach every project with professionalism, creativity, and a
-            commitment to quality. I'm always excited to take on new challenges,
-            learn from every experience, and build digital products that make a
-            meaningful impact.
-          </p>
         </div>
       </div>
-    </section>
 
-    <!-- Skills -->
+    </div>
+  </section>
 
-    <section id="skills">
-      <h2 class="title">My Skills</h2>
+
+  <!-- About -->
+  <section id="about" class="section about-section">
+
+    <div class="container about-content">
+
+      <p class="small-title">Get To Know Me</p>
+
+      <h2 class="section-title">About Me</h2>
+
+      <p class="about-text">
+        I am a Web Development student and aspiring Web Developer.
+        I enjoy building websites and learning new technologies.
+        My main focus is creating simple, responsive and
+        user-friendly web experiences.
+      </p>
+
+      <p class="about-text">
+        I have worked on different projects using frontend and
+        backend technologies and I am continuously improving my skills.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <p class="small-title">My Skills</p>
+
+        <h2 class="section-title">Technologies I Use</h2>
+
+      </div>
+
 
       <div class="skills">
-        <div class="box">
-          <i class="fa-brands fa-html5"></i>
-          <h3>HTML</h3>
-        </div>
 
-        <div class="box">
-          <i class="fa-brands fa-css3-alt"></i>
-          <h3>CSS</h3>
-        </div>
+        <span>HTML5</span>
+        <span>CSS3</span>
+        <span>JavaScript</span>
+        <span>TypeScript</span>
+        <span>React.js</span>
+        <span>Next.js</span>
+        <span>Tailwind CSS</span>
+        <span>Bootstrap</span>
+        <span>Node.js</span>
+        <span>Express.js</span>
+        <span>MongoDB</span>
+        <span>Git & GitHub</span>
 
-        <div class="box">
-          <i class="fa-brands fa-js"></i>
-          <h3>JavaScript</h3>
-        </div>
-
-        <div class="box">
-          <i class="fa-brands fa-bootstrap"></i>
-          <h3>Bootstrap</h3>
-        </div>
       </div>
-    </section>
 
-    <!-- Projects -->
+    </div>
 
-    <section id="projects">
-      <h2 class="title">My Projects</h2>
+  </section>
 
-      <div class="projects">
-        <div class="card">
-          <h3>Portfolio Website</h3>
 
-          <p>Personal responsive portfolio website.</p>
+ 
+<section id="projects" class="section projects-section">
+
+  <div class="container">
+
+    <div class="section-heading">
+      <p class="small-title">My Work</p>
+      <h2 class="section-title">My Projects</h2>
+    </div>
+
+    <div class="projects">
+
+      <!-- MovieFlix -->
+      <div class="project-card">
+
+        <div class="project-image">
+          <img
+            src="images/movieflix.png"
+            alt="MovieFlix Project"
+          >
         </div>
 
-        <div class="card">
-          <h3>Landing Page</h3>
+        <div class="project-content">
 
-          <p>Modern business landing page design.</p>
+          <h3>MovieFlix</h3>
+
+          <p>
+            A responsive movie website with different movie
+            sections and a clean user interface.
+          </p>
+
+          <div class="project-buttons">
+
+            <a
+              href="https://movie-website-delta-virid.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn primary-btn"
+            >
+              Live Demo
+            </a>
+
+            <a
+              href="https://github.com/Zohra-Habib/Movie-Website"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn github-btn"
+            >
+              GitHub
+            </a>
+
+          </div>
+
         </div>
 
-        <div class="card">
-          <h3>E-Commerce UI</h3>
-
-          <p>Shopping website frontend design.</p>
-        </div>
       </div>
-    </section>
 
-    <!-- Contact -->
 
-    <section id="contact">
-      <h2 class="title">Contact Me</h2>
+      <!-- To-Do List -->
+      <div class="project-card">
 
-      <form>
-        <input type="text" placeholder="Your Name" />
+        <div class="project-image">
+          <img
+            src="images/todolist.png"
+            alt="To Do List Project"
+          >
+        </div>
 
-        <input type="email" placeholder="Your Email" />
+        <div class="project-content">
 
-        <textarea placeholder="Your Message"></textarea>
+          <h3>To-Do List</h3>
 
-        <button>Send Message</button>
-      </form>
-    </section>
+          <p>
+            A simple task management website for adding
+            and managing daily tasks.
+          </p>
 
-    <footer>
-      <p>© 2026 Zohra Habib | Web Developer</p>
-    </footer>
+          <div class="project-buttons">
 
-    <script src="script.js"></script>
-  </body>
+            <a
+              href="https://to-do-list-five-alpha-79.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn primary-btn"
+            >
+              Live Demo
+            </a>
+
+            <a
+              href="https://github.com/Zohra-Habib/to-do-list"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn github-btn"
+            >
+              GitHub
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- My Portfolio -->
+      <div class="project-card">
+
+        <div class="project-image">
+          <img
+            src="images/portfolio.png"
+            alt="My Portfolio Project"
+          >
+        </div>
+
+        <div class="project-content">
+
+          <h3>My Portfolio</h3>
+
+          <p>
+            My personal portfolio website showcasing my
+            skills, projects and web development journey.
+          </p>
+
+          <div class="project-buttons">
+
+            <a
+              href="https://my-portfolio-weld-six-41.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn primary-btn"
+            >
+              Live Demo
+            </a>
+
+            <a
+              href="https://github.com/Zohra-Habib/my-portfolio"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn github-btn"
+            >
+              GitHub
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- UserHub -->
+      <div class="project-card">
+
+        <div class="project-image">
+          <img
+            src="images/userhub.png"
+            alt="UserHub Authentication Project"
+          >
+        </div>
+
+        <div class="project-content">
+
+          <h3>UserHub</h3>
+
+          <p>
+            A full-stack authentication website built with
+            Next.js and MongoDB, featuring user signup,
+            login, protected dashboard and logout.
+          </p>
+
+          <div class="project-buttons">
+
+            <a
+              href="https://userhub-project.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn primary-btn"
+            >
+              Live Demo
+            </a>
+
+            <a
+              href="https://github.com/Zohra-Habib/Userhub-project"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn github-btn"
+            >
+              GitHub
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+  
+
+<!-- Contact -->
+<section id="contact" class="section">
+
+  <div class="contact-container">
+
+    <div class="section-heading">
+      <p class="small-title">Get In Touch</p>
+      <h2 class="section-title">Contact Me</h2>
+    </div>
+
+    <form class="contact-form">
+
+      <input
+        type="text"
+        placeholder="Your Name"
+        required
+      >
+
+      <input
+        type="email"
+        placeholder="Your Email"
+        required
+      >
+
+      <textarea
+        rows="5"
+        placeholder="Your Message"
+        required
+      ></textarea>
+
+      <button type="submit">
+        Send Message
+      </button>
+
+    </form>
+
+  </div>
+
+</section>
+
+
+<!-- Footer -->
+<footer>
+
+  <p>
+    © 2026 Zohra Habib. All rights reserved.
+  </p>
+
+  <a
+    href="https://github.com/Zohra-Habib/my-portfolio"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    GitHub
+  </a>
+
+</footer>
+
+</body>
 </html>
-```
